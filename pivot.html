@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/jpg" href="https://cdn.glitch.com/464e758e-4f7d-4a3d-bda7-dfa50793d438%2FAsset%201.png?v=1617460785791"/>
+    <title>Placing Race</title>
+
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" rel="stylesheet">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.11/carto.min.js"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/pivot-script.js" defer></script>
+    
+  </head>
+  <body style="background: rgb(194, 124, 105, 0.2)">
+     <div id="map">
+    <div class="image-container" style="z-index:3002">
+      <img class="float-icon" src="https://cdn.glitch.com/464e758e-4f7d-4a3d-bda7-dfa50793d438%2FAsset%202.svg?v=1617460786028">
+      </div> 
+    </div>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display:none;"
+      onload="if(submitted)  {window.location='https://place-race-consciouness.glitch.me/return.html';}"
+    ></iframe>
+
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSfE2QrY_hltnA8HYNzJA1Di7i1xgPmf-edyIME48RY2yR8Zlw/formResponse"
+      target="hidden_iframe"
+      id="bootstrapForm"
+      method="POST"
+      onsubmit="submitted=true;"
+    >
+      <fieldset style="font-family: montserrat, arial, sans-serfif; margin: 10px; background: rgb(187,139,65, 0.4); padding: 20px;">
+        <h2>PIVOT POINT:</h2>
+        <h2 style="margin-top: 0px">Changing One&#x27;s Direction</h2>
+      </fieldset>
+
+      <!-- Field type: "title" id: "83468150" -->
+      <fieldset>
+        <div class="form-group">
+          <p2 class="help-block">
+            What was an experience which caused you to reckon with the narrative
+            (norm) you had been given about race? Where did this experience take
+            place? Was this place a new place or a familiar place at the time?
+            How is the place related to your FOCAL POINT place? How can you
+            reflect further on how the characteristics this place formed your
+            experience? Has that experience changed how you see that place now?
+            Has the place itself changed?
+          </p2>
+        </div>
+      </fieldset>
+
+      <!-- Field type: "paragraph" id: "534972849" -->
+      <fieldset>
+        <legend for="534972849">
+          Please reflect on these questions about your PIVOT POINT below with a
+          few sentences, a paragraph or two.
+        </legend>
+        <div class="form-group">
+          <textarea
+            id="159398579"
+            name="entry.159398579"
+            class="form-control"
+            style="width: 100%; height: 60px;"
+            required
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Field type: "short" id: "1069432398" -->
+      <fieldset style="border: none; background: none">
+        <legend for="1069432398" style="border: none; background: none"></legend>
+        <div class="form-group">
+          <input
+            id="19109773"
+            type="hidden"
+            name="entry.19109773"
+            class="form-control long-field-pivot"
+                 
+          />
+        </div>
+      </fieldset>
+      
+       <div class="progress">
+      <legend>
+        Please click a point on the map which best geographically places this story. Zoom and pan as needed!
+        </legend>
+      </div>
+
+      <!-- Field type: "short" id: "284907550" -->
+      <fieldset style="border: none; background: none">
+        <legend for="284907550" style="border: none; background: none"></legend>
+        <div class="form-group">
+          <input
+            id="345744099"
+            type="hidden"
+            name="entry.345744099"
+            class="form-control lat-field-pivot"
+                 
+          />
+        </div>
+      </fieldset>
+
+      <!-- Field type: "short" id: "1005913197" -->
+      <fieldset>
+        <legend for="1005913197">
+          Is this point location sufficient? Or, would you like to capture a
+          larger area? If larger area, please list the town, city, neighborhood,
+          state, etc. and I will try to illustrate that broader context on the
+          final map.
+        </legend>
+        <div class="form-group">
+          <input
+            id="133503374"
+            type="text"
+            name="entry.133503374"
+            class="form-control"
+            style="width: 100%"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <!-- Field type: "short" id: "481953611" -->
+      <fieldset>
+        <legend for="481953611">Name (to validate)</legend>
+        <div class="form-group">
+          <input
+            id="1031888224"
+            type="text"
+            name="entry.1031888224"
+            class="form-control"
+                 required
+          />
+        </div>
+      </fieldset>
+
+      <input type="hidden" name="fvv" value="1" />
+      <input type="hidden" name="fbzx" value="2402122118677909412" />
+      <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+      <input type="hidden" name="pageHistory" value="0" />
+
+      <input class="btn btn-primary" type="submit" value="Next Page: Point of RETURN" />
+    </form>
+  </body>
+</html>

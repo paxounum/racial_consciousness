@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/jpg" href="https://cdn.glitch.com/464e758e-4f7d-4a3d-bda7-dfa50793d438%2FAsset%201.png?v=1617460785791"/>
+    <title>Placing Race</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body style="background: rgb(128, 113, 178, 0.2)">
+     <div class="image-container" style="justify-content: center; z-index:3002">
+      <img class="float-image" src="https://cdn.glitch.com/464e758e-4f7d-4a3d-bda7-dfa50793d438%2FAsset%201.svg?v=1617460785791">
+      <img class="float-image" src="https://cdn.glitch.com/464e758e-4f7d-4a3d-bda7-dfa50793d438%2FAsset%202.svg?v=1617460786028">
+      <img class="float-image" src="https://cdn.glitch.com/464e758e-4f7d-4a3d-bda7-dfa50793d438%2FAsset%203.svg?v=1617460785791">
+      </div> 
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display:none;"
+      onload="if(submitted)  {window.location='https://place-race-consciouness.glitch.me/index.html';}"
+    ></iframe>
+
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSfG_jBS6W8-d5bmQ7NvOs6AgPgZV79z4pF8nhaFwW7L5wg8cA/formResponse"
+      target="hidden_iframe"
+      id="bootstrapForm"
+      method="POST"
+      onsubmit="submitted=true;"
+    >
+      <fieldset
+        style="font-family: montserrat, arial, sans-serfif; margin: 10px; background: rgb(187,139,65, 0.4); padding: 20px;"
+      >
+        <h2>Final Reflections</h2>
+      </fieldset>
+
+      <!-- Field type: "title" id: "838587629" -->
+      <fieldset>
+        <div class="form-group">
+          <p class="help-block">
+            Please share any additional thoughts that will help me make this
+            digital form a safe and tender space for future participants. These
+            will not be shared beyond me.
+          </p>
+        </div>
+      </fieldset>
+
+      <!-- Field type: "paragraph" id: "1434285690" -->
+      <fieldset>
+        <legend for="1434285690">
+          Are there any additional questions you think would be helpful here?
+        </legend>
+        <div class="form-group">
+          <textarea
+            id="1147108567"
+            name="entry.1147108567"
+            class="form-control"
+            style="width: 100%; height: 60px;"
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Field type: "paragraph" id: "476416322" -->
+      <fieldset>
+        <legend for="476416322">
+          How might these questions be made more appropriate, sensitive, or
+          respectful when being asked of folks of color?
+        </legend>
+        <div class="form-group">
+          <textarea
+            id="1001724342"
+            name="entry.1001724342"
+            class="form-control"
+            style="width: 100%; height: 60px;"
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Field type: "paragraph" id: "65176628" -->
+      <fieldset>
+        <legend for="65176628">Anything else?</legend>
+        <div class="form-group">
+          <textarea
+            id="361073974"
+            name="entry.361073974"
+            class="form-control"
+            style="width: 100%; height: 60px;"
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Field type: "title" id: "1946942370" -->
+      <fieldset>
+        <legend for="1946942370">THANK YOU!!</legend>
+        <div class="form-group">
+          <p2 class="help-block">
+            Many thanks for your time and consideration in this less-than
+            conventional interview space. I hope you found it helpful, even if
+            helpfully challenging. I am still learning about how to hear, hold,
+            and illustrate stories. Our stories of experiencing the impacts of
+            race, racism, supremacy, and Power are sensitive, charged, and
+            sometimes even awkward. But, we are all still learning, aren&#x27;t
+            we? I&#x27;ll keep you posted on the mapping progress and I may
+            reach out to you personally for more information or clarification.
+          </p2>
+          <h3>
+            Be well, stay healthy.
+          </h3>
+        </div>
+      </fieldset>
+
+      <!-- Field type: "short" id: "1825780210" -->
+      <fieldset>
+        <legend for="1825780210">Name (validation)</legend>
+        <div class="form-group">
+          <input
+            id="1725757815"
+            type="text"
+            name="entry.1725757815"
+            class="form-control"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <input type="hidden" name="fvv" value="1" />
+      <input type="hidden" name="fbzx" value="7585491661606574899" />
+      <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+      <input type="hidden" name="pageHistory" value="0" />
+
+      <input class="btn btn-primary" type="submit" value="FINAL Submit" />
+    </form>
+  </body>
+</html>
