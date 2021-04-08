@@ -1,0 +1,114 @@
+/* CSS files add styling rules to your content */
+/*
+  --owhite: #f0f4f4;
+  --gold: #bb8b41;
+  --green: #a2a95a;
+  --dgreen: #688773;
+  --blue: #4a82ad;
+  --red: #c27c69;
+  --purple: #8071b2;
+  --gray: #535e5e; */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background: rgb(187,139,65, 0.4)
+}
+
+form {
+  width: 40%;
+  /* position: fixed; */
+}
+
+h1 {
+  font-style: italic;
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+
+p {
+  font-size: 14px;
+}
+
+p2 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+legend {
+  font-family: montserrat, ariel, sans-serif;
+  background: lightgray;
+  padding: 5px;
+  font-weight: bold;
+  /*width: 600px; */
+}
+
+fieldset {
+  background:rgb(240,244,244, 1);
+  margin: 10px;
+  padding: 20px;
+  border: none;
+  /* width: 600px; */
+}
+
+.spacing {
+  padding: 20px;
+}
+
+.progress {
+  background: lightgray;
+  color: black;
+  padding: 10px;
+  position: relative;
+  left: 100px;
+  width: 40%;
+}
+
+#map {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  width: 55%;
+  top: 0;
+}
+
+.image-container {
+  display: flex;
+  flex-flow: column wrap;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 55%;
+  justify-content: center;
+  align-items: center;
+}
+
+.float-image {
+  background: none;
+  padding:20px;
+  right: 250px;
+  display: flex;
+  flex: none;
+  align-items: center;
+  z-index: 3002;
+}
+
+.float-icon {
+  background: none;
+  padding:20px;
+  right: 250px;
+  display: flex;
+  flex: none;
+  position: fixed;
+  right: 0;
+  z-index: 3002;
+}
